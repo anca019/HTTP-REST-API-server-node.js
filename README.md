@@ -30,7 +30,7 @@ This repository contains a small nodejs HTTP REST API server created using the E
 
 Calculate the age when given a birthdate formatted dd/mm/yyyy:
 
-https://forum.alphasoftware.com/forum/alpha-anywhere-version-12/mobile-browser-applications/101714-calculate-age-when-dates-formatted-dd-mm-yyyy#post859808
+https://support.callscripter.com/kb/a1759/using-javascript-to-calculate-age.aspx
 
 Handling POST Requests in Node.js:
 
