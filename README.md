@@ -5,7 +5,7 @@ This repository contains a small nodejs HTTP REST API server created using the E
 ## Schematic Overview
 
 - controllers
-      - v1.js - the controller where the router forwards the request once a GET or POST request is submitted to the API enpoints http://localhost:8080/api/v1/quote/car-insurance and
+      - v1.js - the controller where the router forwards the request once a GET or POST request is submitted to the API enpoints 'http://localhost:8080/api/v1/quote/car-insurance' and
       http://localhost:8080/v1/quote/car-insurance.
       
 - routes 
