@@ -25,3 +25,17 @@ This repository contains a small nodejs HTTP REST API server created using the E
     
 - package.json - includes metadata and dependencies relevant to the project.
     
+## Sources of inspiration
+
+
+Calculate the age when given a birthdate formatted dd/mm/yyyy:
+
+https://forum.alphasoftware.com/forum/alpha-anywhere-version-12/mobile-browser-applications/101714-calculate-age-when-dates-formatted-dd-mm-yyyy#post859808
+
+Handling POST Requests in Node.js:
+
+https://www.youtube.com/watch?v=rin7gb9kdpk&t=243s
+
+Testing a REST API in Node JS with Express using Mocha and Chai:
+
+https://www.youtube.com/watch?v=I4BZQr-5mBY
