@@ -4,7 +4,7 @@
   "description": "http REST api server",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha \"test/*.test.js\"",
     "start": "nodemon app.js"
   },
   "author": "anca",

@@ -10,14 +10,12 @@ chai.should();
 
 chai.use(chaiHttp);
 
-describe("Does a GET request to the API which returns the expected data", () => {
-  it("It gets the API data", (done) => {
+describe("Does a GET request which returns the expected data", () => {
+  it("Returns the API data", (done) => {
     request.get({ url: baseURL + '/v1/quote/car-insurance'}, (error, response, body) => {
 	  const bodyObj = JSON.parse(body);
 	  expect(bodyObj.success).to.equal(true);
 	  expect(bodyObj.message).to.equal("quote successfully computed");
-	  expect(bodyObj.data.eligible).to.equal(false);
-	  expect(bodyObj.data.premiums).to.equal("");
 	  expect(response.statusCode).to.equal(200);
 	  console.log(body);
 	  done();
@@ -26,7 +24,7 @@ describe("Does a GET request to the API which returns the expected data", () => 
 });
 
 describe("Does a POST request with valid payload", () => {
-  it("It should POST new data", (done) => {
+  it("Returns the computed prices", (done) => {
     const data = {
 	  car_value: 19653.50,
 	  driver_birthdate: "15/10/1983"
@@ -43,7 +41,7 @@ describe("Does a POST request with valid payload", () => {
 		response.body.data.eligible.should.be.eq(true);
 		response.body.data.premiums.civil_liability.should.be.eq(500);
 		response.body.data.premiums.omnium.should.be.eq(589.61);
-		console.log('The API sends back the data with the correct price computation');
+		console.log('The API returns the data with the correct price computation');
 		console.log(response.body);
 		done();
 	});
